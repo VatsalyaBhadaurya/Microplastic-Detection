@@ -18,24 +18,10 @@ A Fully Connected Fusion Network with scaled dot-product attention combines the 
 
 Gautam Buddha University, Greater Noida, India
 
+- Vatsalya Bhadaurya — Computer Science & Engineering
 - Shashwat Upadhayay — Computer Science & Engineering
 - Vinayak Dwivedi — Electronics & Communication Engineering
-- Vatsalya Bhadaurya — Computer Science & Engineering
 - Yuvraj Singh — Computer Science & Engineering
 - Yaduraj Singh — Computer Science & Engineering
 - Sharmishtha — Computer Science & Engineering
 
-## Tech
-
-Static site — plain HTML, CSS, and vanilla JavaScript. No build step. The full research paper is embedded and downloadable (`paper.pdf`).
-
-## Local preview
-
-```bash
-python -m http.server 8000
-# then open http://localhost:8000
-```
-
-## Deployment
-
-Hosted on **GitHub Pages** with a custom domain (`microplastic.vatsalyaaa.me`) configured via a Cloudflare CNAME record. The `CNAME` file in the repo root sets the custom domain; enable Pages from the `main` branch in the repository settings.
