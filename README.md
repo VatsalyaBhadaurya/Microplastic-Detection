@@ -1,8 +1,9 @@
-# Microplastic-Detection
+# Microplastic-Detection — GangaDrishthi
 
-Website for **"Development of a Real-Time Multi-Modal Sensor for Field-Based Microplastic Detection"** — presented at the IEEE 2nd International Conference on Cognitive Computing in Engineering, Communications, Sciences and Biomedical Health Informatics (IC3ECSBHI), February 12–14, 2026.
+Website for **"Development of a Real-Time Multi-Modal Sensor for Field-Based Microplastic Detection"** (project **GangaDrishthi**) — presented at the IEEE 2nd International Conference on Cognitive Computing in Engineering, Communications, Sciences and Biomedical Health Informatics (IC3ECSBHI), February 12–14, 2026.
 
-🌐 **Live site:** https://microplastic.vatsalyaaa.me
+**Live site:** https://microplastic.vatsalyaaa.me
+**Paper (ResearchGate):** https://www.researchgate.net/publication/403861770_Development_of_a_Real-Time_Multi_Modal_Sensor_for_Field_Based_Microplastic_Detection
 
 ## About the project
 
@@ -24,4 +25,3 @@ Gautam Buddha University, Greater Noida, India
 - Yuvraj Singh — Computer Science & Engineering
 - Yaduraj Singh — Computer Science & Engineering
 - Sharmishtha — Computer Science & Engineering
-

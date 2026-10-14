@@ -3,35 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Real-Time Multi-Modal Microplastic Detection Sensor</title>
-  <meta name="description" content="A compact, low-cost multi-modal sensor combining impedance spectroscopy, multispectral optical imaging and YOLOv8 deep-learning microscopy for real-time, field-based microplastic detection." />
+  <title>GangaDrishthi — Real-Time Multi-Modal Microplastic Detection Sensor</title>
+  <meta name="description" content="GangaDrishthi: a compact, low-cost multi-modal sensor combining impedance spectroscopy, multispectral optical imaging and YOLOv8 deep-learning microscopy for real-time, field-based microplastic detection." />
   <meta name="author" content="Shashwat Upadhayay, Vinayak Dwivedi, Vatsalya Bhadaurya, Yuvraj Singh, Yaduraj Singh, Sharmishtha" />
-  <meta name="theme-color" content="#0ea5a4" />
+  <meta name="theme-color" content="#1877bf" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Real-Time Multi-Modal Microplastic Detection Sensor" />
+  <meta property="og:title" content="GangaDrishthi — Real-Time Multi-Modal Microplastic Detection Sensor" />
   <meta property="og:description" content="Laboratory-grade microplastic detection in the field — at a fraction of the cost." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://microplastic.vatsalyaaa.me" />
+  <meta property="og:image" content="https://microplastic.vatsalyaaa.me/assets/logo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>" />
+  <link rel="icon" href="assets/logo.png" />
 </head>
 <body>
   <!-- NAV -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a href="#top" class="brand">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__text">Microplastic<span class="brand__dot">Sensor</span></span>
+      <a href="#top" class="brand" aria-label="GangaDrishthi home">
+        <img src="assets/logo.png" alt="GangaDrishthi" class="brand__logo" />
       </a>
       <nav class="nav__links" aria-label="Primary">
         <a href="#overview">Overview</a>
         <a href="#system">System</a>
         <a href="#methodology">Methodology</a>
+        <a href="#detection">Detection</a>
         <a href="#results">Results</a>
         <a href="#paper">Paper</a>
         <a href="#team">Team</a>
@@ -51,27 +52,32 @@
       <div class="grid-overlay"></div>
     </div>
     <div class="hero__inner">
-      <span class="eyebrow">IEEE IC3ECSBHI 2026 · February 12–14, 2026</span>
-      <h1 class="hero__title">
-        Real-Time Multi-Modal Sensor for
-        <span class="grad">Field-Based Microplastic Detection</span>
-      </h1>
-      <p class="hero__lede">
-        A compact, low-cost platform that fuses <strong>impedance spectroscopy</strong>,
-        <strong>programmable multispectral optical imaging</strong>, and
-        <strong>YOLOv8 deep-learning microscopy</strong> to deliver laboratory-grade
-        microplastic detection directly in the field — at a fraction of the cost.
-      </p>
-      <div class="hero__cta">
-        <a href="#paper" class="btn btn--primary">Preview Research Paper</a>
-        <a href="paper.pdf" class="btn btn--ghost" download>Download PDF ↓</a>
+      <div class="hero__copy">
+        <span class="eyebrow">IEEE IC3ECSBHI 2026 · February 12–14, 2026</span>
+        <h1 class="hero__title">
+          Real-Time Multi-Modal Sensor for
+          <span class="grad">Field-Based Microplastic Detection</span>
+        </h1>
+        <p class="hero__lede">
+          <strong>GangaDrishthi</strong> is a compact, low-cost platform that fuses
+          <strong>impedance spectroscopy</strong>, <strong>programmable multispectral optical imaging</strong>,
+          and <strong>YOLOv8 deep-learning microscopy</strong> to deliver laboratory-grade microplastic
+          detection directly in the field — at a fraction of the cost.
+        </p>
+        <div class="hero__cta">
+          <a href="#paper" class="btn btn--primary">Preview Research Paper</a>
+          <a href="paper.pdf" class="btn btn--ghost" download>Download PDF</a>
+        </div>
       </div>
-      <div class="hero__stats">
-        <div class="stat"><span class="stat__num">&lt;200<small>ms</small></span><span class="stat__label">Inference / sample</span></div>
-        <div class="stat"><span class="stat__num">3</span><span class="stat__label">Fused sensing modalities</span></div>
-        <div class="stat"><span class="stat__num">5<small>mm</small></span><span class="stat__label">Particle threshold</span></div>
-        <div class="stat"><span class="stat__num">5+</span><span class="stat__label">Polymer classes</span></div>
+      <div class="hero__visual">
+        <img src="assets/sensor-3d.png" alt="3D model of the GangaDrishthi field sensor buoy" class="hero__device" />
       </div>
+    </div>
+    <div class="hero__stats container">
+      <div class="stat"><span class="stat__num">&lt;200<small>ms</small></span><span class="stat__label">Inference / sample</span></div>
+      <div class="stat"><span class="stat__num">3</span><span class="stat__label">Fused sensing modalities</span></div>
+      <div class="stat"><span class="stat__num">5<small>mm</small></span><span class="stat__label">Particle threshold</span></div>
+      <div class="stat"><span class="stat__num">5+</span><span class="stat__label">Polymer classes</span></div>
     </div>
   </section>
 
@@ -92,14 +98,13 @@
             expensive, and too slow for real-time field monitoring.
           </p>
           <p>
-            This work presents a compact, low-cost system that integrates impedance sensing,
-            programmable multispectral optical sensing, and machine-learning-augmented microscopy
-            for rapid on-site microplastic quantification. Using a <strong>YOLOv8</strong>-based deep-learning
-            pipeline, the system automatically identifies particle size and estimates polymer type
-            in water samples. Results surface through a companion app that generates geo-tagged
-            contamination heatmaps and a <strong>Microplastic Risk Index (MRI)</strong>. Validated against
-            standard FTIR/Raman data, it delivers laboratory-grade accuracy — empowering researchers
-            and citizen scientists alike.
+            GangaDrishthi integrates impedance sensing, programmable multispectral optical sensing,
+            and machine-learning-augmented microscopy for rapid on-site microplastic quantification.
+            Using a <strong>YOLOv8</strong>-based deep-learning pipeline, the system automatically identifies
+            particle size and estimates polymer type in water samples. Results surface through a
+            companion app that generates geo-tagged contamination heatmaps and a
+            <strong>Microplastic Risk Index (MRI)</strong>. Validated against standard FTIR/Raman data, it
+            delivers laboratory-grade accuracy — empowering researchers and citizen scientists alike.
           </p>
           <ul class="keywords">
             <li>Microplastic detection</li>
@@ -127,22 +132,30 @@
         </div>
         <div class="cards">
           <article class="card">
-            <div class="card__icon">⚡</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+            </div>
             <h3>Real-time &amp; on-device</h3>
             <p>Quantized ML models run at the edge on an ESP32-S3, delivering inference in under 200&nbsp;ms per sample — no lab, no waiting.</p>
           </article>
           <article class="card">
-            <div class="card__icon">💰</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 12.5 12 21l-8.6-8.5A5 5 0 0 1 12 6a5 5 0 0 1 8.6 6.5z"/></svg>
+            </div>
             <h3>Low-cost &amp; portable</h3>
             <p>Designed for minimal-power field operation with small microcontrollers, deployable even in resource-limited areas.</p>
           </article>
           <article class="card">
-            <div class="card__icon">🧭</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
             <h3>Geo-tagged intelligence</h3>
             <p>A companion app maps contamination hotspots and computes a Microplastic Risk Index to guide policy and action.</p>
           </article>
           <article class="card">
-            <div class="card__icon">🔬</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18l-5-9V3"/><path d="M7.5 15h9"/></svg>
+            </div>
             <h3>Lab-grade accuracy</h3>
             <p>Multimodal fusion validated against FTIR / Raman benchmarks for reliable polymer identification and sizing.</p>
           </article>
@@ -181,6 +194,11 @@
             <p>A 500× digital microscope yields high-resolution RGB particle images; segmentation extracts diameter, aspect ratio, circularity, and texture descriptors.</p>
           </div>
         </div>
+
+        <figure class="figure">
+          <img src="assets/architecture.png" alt="GangaDrishthi system architecture: optical imaging, impedance sensing and microscopy imaging feed preprocessing and a multimodal AI fusion framework on an ESP32-S3 platform." loading="lazy" />
+          <figcaption>Fig. 1 — System architecture: the three sensing modalities feed preprocessing and a YOLOv8-driven multimodal AI fusion framework, deployed on an ESP32-S3 hardware/firmware stack.</figcaption>
+        </figure>
 
         <div class="split">
           <div class="split__text">
@@ -267,35 +285,82 @@
       </div>
     </section>
 
-    <!-- RESULTS -->
-    <section class="section" id="results">
+    <!-- DETECTION SHOWCASE + APP -->
+    <section class="section" id="detection">
       <div class="container">
         <div class="section__head">
-          <span class="kicker">04 — Results</span>
+          <span class="kicker">04 — In Action</span>
+          <h2>From microscope to mobile app</h2>
+          <p class="section__sub">
+            The YOLOv8 pipeline localizes and classifies individual particles, while the companion
+            app turns each capture into an actionable result in the field.
+          </p>
+        </div>
+
+        <div class="showcase">
+          <div class="showcase__app">
+            <img src="assets/app-screenshot.png" alt="GangaDrishthi companion app showing a captured water sample ready for microplastic analysis" loading="lazy" />
+          </div>
+          <div class="showcase__grid">
+            <figure class="figure figure--inset">
+              <img src="assets/detection-result.png" alt="Microplastic particles segmented and outlined on a grayscale microscopy image" loading="lazy" />
+              <figcaption>Fig. 2 — Particle segmentation: detected microplastics outlined by polymer class on a microscopy frame.</figcaption>
+            </figure>
+            <figure class="figure figure--inset">
+              <img src="assets/detection-grid.png" alt="Grid of microscopy samples with YOLOv8 bounding boxes labelling microplastic types" loading="lazy" />
+              <figcaption>Fig. 3 — Qualitative detection across field samples with YOLOv8 class labels.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS / GRAPHS -->
+    <section class="section section--tint" id="results">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker">05 — Results</span>
           <h2>Validated in the lab and the field</h2>
           <p class="section__sub">
             The system was evaluated across controlled laboratory tests and real-world field
-            conditions, tracking training dynamics and detection quality.
+            conditions, tracking training dynamics and detection quality over 20 epochs.
           </p>
         </div>
-        <div class="results">
-          <div class="result">
-            <h3>Box-location loss</h3>
-            <p>High and fluctuating early — driven by irregular field particles, overlaps, and organic background noise — then declining smoothly to a low, stable value as localization sharpened.</p>
-          </div>
-          <div class="result">
-            <h3>Class loss</h3>
-            <p>Dropped rapidly as the model learned clear visual differences, with minor variation on visually similar polymers, finally leveling at consistently low values.</p>
-          </div>
-          <div class="result">
-            <h3>Model performance (mAP)</h3>
-            <p>mAP and mAP@50:95 oscillated through mid-training across sample complexities, then trended upward together — indicating stable, transferable detection features.</p>
-          </div>
-          <div class="result">
-            <h3>Box-overlap loss</h3>
-            <p>After an adaptive rise, loss settled toward ~0.42 beyond epoch 15, confirming improved agreement between predicted and true particle boundaries.</p>
-          </div>
+
+        <div class="graphs">
+          <figure class="graph">
+            <img src="assets/graph-box-location-loss.png" alt="Box location loss curve across 20 training epochs" loading="lazy" />
+            <figcaption>
+              <b>Box-location loss (Fig. 4)</b> — high and fluctuating early, driven by irregular field
+              particles and organic background noise, then declining to a low, stable value as
+              localization sharpened.
+            </figcaption>
+          </figure>
+          <figure class="graph">
+            <img src="assets/graph-class-loss.png" alt="Class loss curve across 20 training epochs" loading="lazy" />
+            <figcaption>
+              <b>Class loss (Fig. 5)</b> — dropped rapidly as clear visual differences were learned,
+              with minor variation on visually similar polymers, settling at consistently low values.
+            </figcaption>
+          </figure>
+          <figure class="graph">
+            <img src="assets/graph-model-performance.png" alt="mAP and mAP@50:95 performance curves across training epochs" loading="lazy" />
+            <figcaption>
+              <b>Model performance — mAP (Fig. 6)</b> — mAP and mAP@50:95 oscillated through
+              mid-training across sample complexities, then trended upward together, indicating
+              stable, transferable detection features.
+            </figcaption>
+          </figure>
+          <figure class="graph">
+            <img src="assets/graph-box-overlap-loss.png" alt="Box overlap loss curve across 20 training epochs" loading="lazy" />
+            <figcaption>
+              <b>Box-overlap loss (Fig. 7)</b> — after an adaptive rise, loss settled toward ~0.42
+              beyond epoch 15, confirming improved agreement between predicted and true particle
+              boundaries.
+            </figcaption>
+          </figure>
         </div>
+
         <blockquote class="quote">
           “The final metrics are stable, meaning the system is ready for practical deployment —
           efficient and reliable across varied real-world conditions.”
@@ -307,18 +372,19 @@
     <section class="section section--dark" id="paper">
       <div class="container">
         <div class="section__head section__head--light">
-          <span class="kicker">05 — The Paper</span>
+          <span class="kicker">06 — The Paper</span>
           <h2>Read the full research paper</h2>
           <p class="section__sub">
-            Preview the complete manuscript below, or download it as a PDF.
+            Preview the complete manuscript below, download the PDF, or view it on ResearchGate.
           </p>
         </div>
         <div class="paper">
           <div class="paper__toolbar">
-            <span class="paper__file">📄 1160.pdf · IEEE IC3ECSBHI 2026</span>
+            <span class="paper__file">1160.pdf · IEEE IC3ECSBHI 2026</span>
             <span class="paper__actions">
+              <a href="https://www.researchgate.net/publication/403861770_Development_of_a_Real-Time_Multi_Modal_Sensor_for_Field_Based_Microplastic_Detection" target="_blank" rel="noopener" class="btn btn--sm btn--ghost-light">ResearchGate ↗</a>
               <a href="paper.pdf" target="_blank" rel="noopener" class="btn btn--sm btn--ghost-light">Open in new tab ↗</a>
-              <a href="paper.pdf" download class="btn btn--sm btn--primary">Download ↓</a>
+              <a href="paper.pdf" download class="btn btn--sm btn--primary">Download</a>
             </span>
           </div>
           <div class="paper__frame">
@@ -401,10 +467,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div>
-        <a href="#top" class="brand brand--footer">
-          <span class="brand__mark" aria-hidden="true"></span>
-          <span class="brand__text">Microplastic<span class="brand__dot">Sensor</span></span>
-        </a>
+        <img src="assets/logo.png" alt="GangaDrishthi" class="footer__logo" />
         <p class="footer__note">Development of a Real-Time Multi-Modal Sensor for Field-Based Microplastic Detection · IEEE IC3ECSBHI 2026.</p>
       </div>
       <div class="footer__links">
@@ -412,6 +475,7 @@
         <a href="#system">System</a>
         <a href="#results">Results</a>
         <a href="paper.pdf" target="_blank" rel="noopener">Paper (PDF)</a>
+        <a href="https://www.researchgate.net/publication/403861770_Development_of_a_Real-Time_Multi_Modal_Sensor_for_Field_Based_Microplastic_Detection" target="_blank" rel="noopener">ResearchGate ↗</a>
         <a href="https://github.com/VatsalyaBhadaurya/Microplastic-Detection" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
     </div>
