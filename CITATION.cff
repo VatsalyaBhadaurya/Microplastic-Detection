@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: "If you use this work or reference this project, please cite the paper below."
+title: "Development of a Real-Time Multi-Modal Sensor for Field-Based Microplastic Detection"
+abstract: >-
+  GangaDrishthi is a compact, low-cost system that fuses impedance spectroscopy,
+  programmable multispectral optical imaging, and YOLOv8 deep-learning microscopy
+  for rapid, on-site microplastic detection in water. It classifies polymer type,
+  estimates particle size, and produces a geo-tagged Microplastic Risk Index (MRI),
+  delivering laboratory-grade accuracy in the field.
+type: software
+authors:
+  - given-names: Vatsalya
+    family-names: Bhadaurya
+    email: vatbhadaurya@gmail.com
+  - given-names: Shashwat
+    family-names: Upadhayay
+  - given-names: Vinayak
+    family-names: Dwivedi
+  - given-names: Yuvraj
+    family-names: Singh
+  - given-names: Yaduraj
+    family-names: Singh
+  - given-names: Sharmishtha
+repository-code: "https://github.com/VatsalyaBhadaurya/Microplastic-Detection"
+url: "https://microplastic.vatsalyaaa.me"
+keywords:
+  - microplastic detection
+  - deep learning
+  - YOLOv8
+  - impedance spectroscopy
+  - multispectral imaging
+  - IoT sensors
+  - environmental monitoring
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Development of a Real-Time Multi-Modal Sensor for Field-Based Microplastic Detection"
+  authors:
+    - given-names: Vatsalya
+      family-names: Bhadaurya
+    - given-names: Shashwat
+      family-names: Upadhayay
+    - given-names: Vinayak
+      family-names: Dwivedi
+    - given-names: Yuvraj
+      family-names: Singh
+    - given-names: Yaduraj
+      family-names: Singh
+    - given-names: Sharmishtha
+  collection-title: >-
+    2026 2nd International Conference on Cognitive Computing in Engineering,
+    Communications, Sciences and Biomedical Health Informatics (IC3ECSBHI)
+  conference:
+    name: >-
+      2nd International Conference on Cognitive Computing in Engineering,
+      Communications, Sciences and Biomedical Health Informatics (IC3ECSBHI)
+  publisher:
+    name: "IEEE"
+  year: 2026
+  month: 2
+  isbn: "979-8-3315-5691-4"
+  url: "https://ieeexplore.ieee.org/document/11469066"
