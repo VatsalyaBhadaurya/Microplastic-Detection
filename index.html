@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Multi-Modal Microplastic Detection Sensor</title>
+  <meta name="description" content="A compact, low-cost multi-modal sensor combining impedance spectroscopy, multispectral optical imaging and YOLOv8 deep-learning microscopy for real-time, field-based microplastic detection." />
+  <meta name="author" content="Shashwat Upadhayay, Vinayak Dwivedi, Vatsalya Bhadaurya, Yuvraj Singh, Yaduraj Singh, Sharmishtha" />
+  <meta name="theme-color" content="#0ea5a4" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Real-Time Multi-Modal Microplastic Detection Sensor" />
+  <meta property="og:description" content="Laboratory-grade microplastic detection in the field — at a fraction of the cost." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://microplastic.vatsalyaaa.me" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Microplastic<span class="brand__dot">Sensor</span></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#system">System</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#results">Results</a>
+        <a href="#paper">Paper</a>
+        <a href="#team">Team</a>
+      </nav>
+      <a href="paper.pdf" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Read Paper</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero__inner">
+      <span class="eyebrow">IEEE IC3ECSBHI 2026 · February 12–14, 2026</span>
+      <h1 class="hero__title">
+        Real-Time Multi-Modal Sensor for
+        <span class="grad">Field-Based Microplastic Detection</span>
+      </h1>
+      <p class="hero__lede">
+        A compact, low-cost platform that fuses <strong>impedance spectroscopy</strong>,
+        <strong>programmable multispectral optical imaging</strong>, and
+        <strong>YOLOv8 deep-learning microscopy</strong> to deliver laboratory-grade
+        microplastic detection directly in the field — at a fraction of the cost.
+      </p>
+      <div class="hero__cta">
+        <a href="#paper" class="btn btn--primary">Preview Research Paper</a>
+        <a href="paper.pdf" class="btn btn--ghost" download>Download PDF ↓</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><span class="stat__num">&lt;200<small>ms</small></span><span class="stat__label">Inference / sample</span></div>
+        <div class="stat"><span class="stat__num">3</span><span class="stat__label">Fused sensing modalities</span></div>
+        <div class="stat"><span class="stat__num">5<small>mm</small></span><span class="stat__label">Particle threshold</span></div>
+        <div class="stat"><span class="stat__num">5+</span><span class="stat__label">Polymer classes</span></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- OVERVIEW / ABSTRACT -->
+    <section class="section" id="overview">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker">01 — Abstract</span>
+          <h2>The microplastic problem, reimagined for the field</h2>
+        </div>
+        <div class="abstract">
+          <p>
+            Microplastic pollution has emerged as one of the most concerning environmental
+            issues of our time — minute plastic fragments smaller than <strong>5&nbsp;mm</strong> are now
+            detected in oceans, freshwater systems, and even human tissue. Established detection
+            methods such as <strong>FTIR</strong> and <strong>Raman spectroscopy</strong> are accurate but laboratory-bound,
+            expensive, and too slow for real-time field monitoring.
+          </p>
+          <p>
+            This work presents a compact, low-cost system that integrates impedance sensing,
+            programmable multispectral optical sensing, and machine-learning-augmented microscopy
+            for rapid on-site microplastic quantification. Using a <strong>YOLOv8</strong>-based deep-learning
+            pipeline, the system automatically identifies particle size and estimates polymer type
+            in water samples. Results surface through a companion app that generates geo-tagged
+            contamination heatmaps and a <strong>Microplastic Risk Index (MRI)</strong>. Validated against
+            standard FTIR/Raman data, it delivers laboratory-grade accuracy — empowering researchers
+            and citizen scientists alike.
+          </p>
+          <ul class="keywords">
+            <li>Microplastic detection</li>
+            <li>YOLOv8</li>
+            <li>Deep learning</li>
+            <li>Impedance spectroscopy</li>
+            <li>Multispectral imaging</li>
+            <li>IoT sensors</li>
+            <li>Environmental monitoring</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM / FEATURES -->
+    <section class="section section--tint" id="features">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker">Why it matters</span>
+          <h2>From centralized labs to a distributed sensing network</h2>
+          <p class="section__sub">
+            Moving environmental surveillance away from costly central laboratories toward an
+            accessible, portable network makes large-scale tracking simpler and response faster.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">⚡</div>
+            <h3>Real-time &amp; on-device</h3>
+            <p>Quantized ML models run at the edge on an ESP32-S3, delivering inference in under 200&nbsp;ms per sample — no lab, no waiting.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">💰</div>
+            <h3>Low-cost &amp; portable</h3>
+            <p>Designed for minimal-power field operation with small microcontrollers, deployable even in resource-limited areas.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🧭</div>
+            <h3>Geo-tagged intelligence</h3>
+            <p>A companion app maps contamination hotspots and computes a Microplastic Risk Index to guide policy and action.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🔬</div>
+            <h3>Lab-grade accuracy</h3>
+            <p>Multimodal fusion validated against FTIR / Raman benchmarks for reliable polymer identification and sizing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEM DESIGN -->
+    <section class="section" id="system">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker">02 — System Design</span>
+          <h2>Three sensing modalities, one pipeline</h2>
+          <p class="section__sub">
+            A multimodal, field-deployable analytical platform for detection, classification,
+            and risk assessment — fused by a machine-learning model and streamed to the cloud.
+          </p>
+        </div>
+
+        <div class="pipeline">
+          <div class="pnode">
+            <span class="pnode__num">01</span>
+            <h3>Multispectral Optical Imaging</h3>
+            <p>A programmable LED array sweeps 400–940&nbsp;nm, capturing polymer-specific absorption and reflectance signatures through band-depth and intensity-ratio features.</p>
+          </div>
+          <div class="pnode__arrow" aria-hidden="true">→</div>
+          <div class="pnode">
+            <span class="pnode__num">02</span>
+            <h3>Impedance Spectroscopy</h3>
+            <p>Microfluidic electrodes record complex impedance |Z(f)| and phase across 1&nbsp;kHz–2&nbsp;MHz, capturing the distinct dielectric response of each polymer.</p>
+          </div>
+          <div class="pnode__arrow" aria-hidden="true">→</div>
+          <div class="pnode">
+            <span class="pnode__num">03</span>
+            <h3>Microscopy Imaging</h3>
+            <p>A 500× digital microscope yields high-resolution RGB particle images; segmentation extracts diameter, aspect ratio, circularity, and texture descriptors.</p>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="split__text">
+            <h3>Multimodal AI fusion</h3>
+            <p>
+              Feature vectors from YOLOv8 visual embeddings, impedance dielectric profiles, and
+              optical reflectance patterns are concatenated and passed through a
+              <strong>Fully Connected Fusion Network (FCFN)</strong> — a three-layer dense network
+              (128–64–32, ReLU) optimized with Adam.
+            </p>
+            <p>
+              A scaled dot-product attention module adaptively weighs each modality's contribution,
+              producing polymer classification (softmax), size regression, and a confidence-weighted
+              contamination score.
+            </p>
+            <div class="chips">
+              <span>CSPDarkNet53 backbone</span>
+              <span>Anchor-free heads</span>
+              <span>Attention fusion</span>
+              <span>8-bit TFLite quantization</span>
+            </div>
+          </div>
+          <div class="split__panel">
+            <div class="spec">
+              <h4>Hardware platform</h4>
+              <ul>
+                <li><b>Controller</b><span>ESP32-S3 · dual-core Xtensa · Wi-Fi/BLE</span></li>
+                <li><b>Illumination</b><span>Multispectral LED driver (I²C)</span></li>
+                <li><b>Impedance</b><span>ADC-based acquisition circuit</span></li>
+                <li><b>Imaging</b><span>USB UVC microscope camera</span></li>
+                <li><b>Storage</b><span>SD-card module · circular buffer</span></li>
+                <li><b>Firmware</b><span>ESP-IDF framework</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHODOLOGY -->
+    <section class="section section--tint" id="methodology">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker">03 — Methodology</span>
+          <h2>How a water sample becomes a risk score</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__n">1</span>
+            <div>
+              <h3>Sample handling</h3>
+              <p>An optically transparent microfluidic flow cell draws water into laminar flow, aligning optical, electrical, and microscopic views into a single sensing region.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">2</span>
+            <div>
+              <h3>Signal acquisition</h3>
+              <p>Optical, impedance, and microscopy streams are timestamp-coordinated by the ESP32-S3 and combined into a single event record.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">3</span>
+            <div>
+              <h3>Preprocessing</h3>
+              <p>Gaussian denoising and watershed segmentation for imaging; Savitzky–Golay smoothing and PCA for impedance; Z-score / Min–Max feature normalization across modalities.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">4</span>
+            <div>
+              <h3>Detection &amp; fusion</h3>
+              <p>YOLOv8-C localizes and segments particles across PET, PP, PE, PS, and PVC classes; fused features drive classification, sizing, and contamination scoring.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">5</span>
+            <div>
+              <h3>Edge inference &amp; cloud</h3>
+              <p>An 8-bit quantized TFLite model runs on-device; geo-tagged results sync to the companion app for heatmaps and the Microplastic Risk Index.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="section" id="results">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker">04 — Results</span>
+          <h2>Validated in the lab and the field</h2>
+          <p class="section__sub">
+            The system was evaluated across controlled laboratory tests and real-world field
+            conditions, tracking training dynamics and detection quality.
+          </p>
+        </div>
+        <div class="results">
+          <div class="result">
+            <h3>Box-location loss</h3>
+            <p>High and fluctuating early — driven by irregular field particles, overlaps, and organic background noise — then declining smoothly to a low, stable value as localization sharpened.</p>
+          </div>
+          <div class="result">
+            <h3>Class loss</h3>
+            <p>Dropped rapidly as the model learned clear visual differences, with minor variation on visually similar polymers, finally leveling at consistently low values.</p>
+          </div>
+          <div class="result">
+            <h3>Model performance (mAP)</h3>
+            <p>mAP and mAP@50:95 oscillated through mid-training across sample complexities, then trended upward together — indicating stable, transferable detection features.</p>
+          </div>
+          <div class="result">
+            <h3>Box-overlap loss</h3>
+            <p>After an adaptive rise, loss settled toward ~0.42 beyond epoch 15, confirming improved agreement between predicted and true particle boundaries.</p>
+          </div>
+        </div>
+        <blockquote class="quote">
+          “The final metrics are stable, meaning the system is ready for practical deployment —
+          efficient and reliable across varied real-world conditions.”
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- PAPER PREVIEW -->
+    <section class="section section--dark" id="paper">
+      <div class="container">
+        <div class="section__head section__head--light">
+          <span class="kicker">05 — The Paper</span>
+          <h2>Read the full research paper</h2>
+          <p class="section__sub">
+            Preview the complete manuscript below, or download it as a PDF.
+          </p>
+        </div>
+        <div class="paper">
+          <div class="paper__toolbar">
+            <span class="paper__file">📄 1160.pdf · IEEE IC3ECSBHI 2026</span>
+            <span class="paper__actions">
+              <a href="paper.pdf" target="_blank" rel="noopener" class="btn btn--sm btn--ghost-light">Open in new tab ↗</a>
+              <a href="paper.pdf" download class="btn btn--sm btn--primary">Download ↓</a>
+            </span>
+          </div>
+          <div class="paper__frame">
+            <iframe src="paper.pdf#view=FitH" title="Research paper preview" loading="lazy"></iframe>
+            <div class="paper__fallback">
+              <p>Your browser can't display the embedded PDF.</p>
+              <a href="paper.pdf" class="btn btn--primary" target="_blank" rel="noopener">Open the paper ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker">Authors</span>
+          <h2>The team</h2>
+          <p class="section__sub">Gautam Buddha University · Greater Noida, India</p>
+        </div>
+        <div class="team">
+          <article class="member">
+            <div class="member__avatar">SU</div>
+            <h3>Shashwat Upadhayay</h3>
+            <p>Computer Science &amp; Engineering</p>
+          </article>
+          <article class="member">
+            <div class="member__avatar">VD</div>
+            <h3>Vinayak Dwivedi</h3>
+            <p>Electronics &amp; Communication Engineering</p>
+          </article>
+          <article class="member">
+            <div class="member__avatar">VB</div>
+            <h3>Vatsalya Bhadaurya</h3>
+            <p>Computer Science &amp; Engineering</p>
+          </article>
+          <article class="member">
+            <div class="member__avatar">YuS</div>
+            <h3>Yuvraj Singh</h3>
+            <p>Computer Science &amp; Engineering</p>
+          </article>
+          <article class="member">
+            <div class="member__avatar">YaS</div>
+            <h3>Yaduraj Singh</h3>
+            <p>Computer Science &amp; Engineering</p>
+          </article>
+          <article class="member">
+            <div class="member__avatar">Sh</div>
+            <h3>Sharmishtha</h3>
+            <p>Computer Science &amp; Engineering</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENCES -->
+    <section class="section section--tint" id="references">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker">References</span>
+          <h2>Selected citations</h2>
+        </div>
+        <ol class="refs">
+          <li>M. Z. B. Zahir Arju et al., “Deep-learning enabled rapid and low-cost detection of microplastics in consumer products following on-site extraction and image processing,” <em>RSC Adv.</em>, vol. 15, pp. 10473–10483, 2025.</li>
+          <li>D. Ho and H. Feng, “Shedding Light on the Polymer's Identity: Microplastic Detection and Identification Through Nile Red Staining and Multispectral Imaging (FIMAP),” <em>arXiv:2502.17997</em>, 2025.</li>
+          <li>J. Sarmiento, M. Anaya, and D. Tibaduiza, “Microplastic Identification Using Impedance Spectroscopy and Machine Learning Algorithms,” <em>Int. J. Distrib. Sensor Networks</em>, 2024.</li>
+          <li>I. Ishmukhametov, S. Batasheva, and R. Fakhrullin, “Identification of Micro- and Nanoplastics Released from Medical Masks Using Hyperspectral Imaging and Deep Learning,” <em>Analyst</em>, vol. 147, pp. 4616–4628, 2022.</li>
+          <li>K. Han et al., “Innovative Methods for Microplastic Characterization and Detection,” <em>J. Environ. Manage.</em>, vol. 359, 2024.</li>
+          <li>M. Huang et al., “Advancing Microplastic Surveillance Through Photoacoustic Imaging and Deep Learning Techniques,” <em>J. Hazard. Mater.</em>, vol. 470, 2024.</li>
+          <li>B. Shi et al., “Automatic Quantification and Classification of Microplastics in Scanning Electron Micrographs via Deep Learning,” <em>Sci. Total Environ.</em>, vol. 825, 2022.</li>
+          <li>Y. Tang et al., “Low-cost, Multispectral Machine Learning Classification of Simulated Airborne Micro/Nanoplastics,” <em>J. Hazard. Mater.</em>, vol. 488, 2025.</li>
+          <li>K. Rermborirak et al., “Low-cost Portable Microplastic Detection System Integrating Nile Red Fluorescence Staining with YOLOv8-based Deep Learning,” <em>J. Hazard. Mater. Adv.</em>, vol. 19, 2025.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#top" class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Microplastic<span class="brand__dot">Sensor</span></span>
+        </a>
+        <p class="footer__note">Development of a Real-Time Multi-Modal Sensor for Field-Based Microplastic Detection · IEEE IC3ECSBHI 2026.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#overview">Overview</a>
+        <a href="#system">System</a>
+        <a href="#results">Results</a>
+        <a href="paper.pdf" target="_blank" rel="noopener">Paper (PDF)</a>
+        <a href="https://github.com/VatsalyaBhadaurya/Microplastic-Detection" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>© 2026 · Gautam Buddha University, Greater Noida</span>
+      <span>microplastic.vatsalyaaa.me</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
